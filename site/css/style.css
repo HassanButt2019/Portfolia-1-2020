@@ -3,7 +3,10 @@
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
+
 
 .logo
 {
@@ -37,7 +40,7 @@ section
     background-size: cover;
     position: relative;
 }
-nav
+.menu
 {
     display: flex;
     justify-content: space-between;
@@ -47,11 +50,11 @@ nav
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     padding: 0px 5%;
 }
-nav ul
+.menu ul
 {
     display:flex;
 }
-nav ul li a
+.menu ul li a
 {
     margin: 30px;
     font-family: 'Orbitron', sans-serif;
@@ -238,13 +241,14 @@ button:active
     padding-right: 10px;
     margin-right: 27px;
     font-family: 'Orbitron', sans-serif;
+    border: 1px solid #2d2a2a;
     text-align: center;
     display: flex;
     justify-content: center;
-    border-radius: 150px;
     align-items: center;
     vertical-align: middle;
     padding: 10px;
+    border-radius: 150px;
 }
 #skill-head
 {
@@ -283,7 +287,7 @@ button:active
     width: 100%;
     padding:5px 3px;
     font-size: 19px;
-    border: 2px solid black;
+    border: 2px solid #2d2a2a;
     border-radius: 6px ;
 }
 
@@ -297,15 +301,36 @@ button:active
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #262525;
 }
+footer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #2d2a2a;
+}
 
 .text-footer
 {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
-    display: flex;
-    background-color: #0b0b0b;
-    justify-content: center;
     padding: 30px 0;
+}
+.social
+{
+    width: 100%;
+}
+.social-logos
+{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    left: 65%;
+    
+}
+.social-img
+{
+    padding: 10px;
 }
