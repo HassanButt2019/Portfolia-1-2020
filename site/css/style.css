@@ -49,6 +49,7 @@ section
     background-color: #fff;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     padding: 0px 5%;
+    width: 100%;
 }
 .menu ul
 {
@@ -95,6 +96,7 @@ margin: 45px 0px 25px;
     left: 13%;
     top: 42%;
     transform: translate(-13%,-42%);
+    margin: 0 auto;
 }
 .text-container button
 {
@@ -196,17 +198,16 @@ button:active
 }
 .skills
 {
-    
     align-items: center;
     margin: 0 auto;
+    background-color: white;
 }
 
 .services
 {
-    height: 600px;
     background-color: #fff;
     padding: 2% 10% 0px 10%;
-
+    overflow:hidden;
 }
 .services-text
 {
@@ -235,7 +236,7 @@ button:active
     font-size: 30px;
     
 }
-.box1 ,.box2 , .box3 ,.box4 ,.box5 , .box6 , .box7
+.box
 {
     width: 200px;
     height: 200px;
@@ -256,7 +257,7 @@ button:active
 {
     text-align: center;
     color: #262525;
-    margin: 10px;
+    justify-content: center;
     font-size:30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -265,6 +266,7 @@ button:active
     text-align: center;
     display: flex;
     justify-content: center;
+    
 }
 .contact
 {
@@ -309,6 +311,8 @@ footer
     height: 100%;
     display: flex;
     background-color: #2d2a2a;
+    position: static;
+    bottom: 0;
 }
 
 .text-footer
@@ -388,7 +392,7 @@ footer
     .h-nav
     {
         height: 52px;
-        width: 100%;
+        width: 120%;
     }
     .v-class
     {
@@ -462,5 +466,49 @@ footer
     text-align: center;
     justify-content: center;
     margin-top: 2px;
+}
+.services-text p:nth-child(1)
+{
+    font-size: 4vh;
+    
+}
+.services-text p:nth-child(2)
+{
+    font-size: 2vh;
+}
+.services-text p:nth-child(3)
+{
+    font-size: 2vh; 
+}
+.box-container
+{
+    flex-direction: column;
+}
+.box
+{
+    margin-top: 10px;
+    margin: 10px auto;
+    height: 50px;
+}
+.skill-head
+{
+   display: inline-block;
+   padding: 20px 10px;
+}
+footer
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.social
+{
+    width: 0;
+}
+
+.social-logos
+{
+    margin:0;
 }
 }
